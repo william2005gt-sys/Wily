@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PERFIL PERSONAL - William David</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(-45deg,#89f7fe,#66a6ff,#fbc2eb,#f7797d);
+      background-size: 400% 400%;
+      animation: bgmove 18s ease infinite;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px 12px;
+    }
+
+    @keyframes bgmove {
+      0% {background-position: 0% 50%}
+      50% {background-position: 100% 50%}
+      100% {background-position: 0% 50%}
+    }
+
+    .container {
+      width: 100%;
+      max-width: 860px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.45);
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+      background: rgba(255,255,255,0.8);
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 26px;
+      font-weight: 700;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      color: red;
+      margin-top: 25px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .profile img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid rgba(255,255,255,0.9);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+    }
+
+    .info {
+      min-width: 260px;
+      max-width: 520px;
+    }
+
+    .info p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .label {
+      font-weight: 700;
+      color: #00f2fe;
+    }
+
+    .contacts {
+      margin-top: 10px;
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(0,0,0,0.45);
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    }
+
+    .contact img {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255,255,255,0.9);
+    }
+
+    .meta p {
+      margin: 4px 0;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .buttons {
+      margin-top: 8px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      padding: 9px 14px;
+      border-radius: 20px;
+      font-weight: 700;
+      color: #fff;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+      transition: transform .18s;
+    }
+
+    .btn:active {transform: translateY(1px);}
+    .call {background: linear-gradient(45deg,#4facfe,#00f2fe);}
+    .wa {background: linear-gradient(45deg,#25D366,#128C7E);}
+
+    @media(max-width:700px) {
+      .profile {flex-direction: column;}
+      .info {text-align: center;}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div style="text-align:center">
+      <h1>PERFIL PERSONAL</h1>
+    </div>
+
+    <div class="profile">
+      <img src="https://i.ibb.co/DfHN4wYw/william.jpg" alt="Foto William">
+      <div class="info">
+        <p><span class="label">Nombre:</span> William David</p>
+        <p><span class="label">Apellidos:</span> Choc Arrecis</p>
+        <p><span class="label">Fecha de nacimiento:</span> 4 de julio de 2005</p>
+        <p><span class="label">Vivo en:</span> 8va calle a 33-68, Colonia Jardines de Tikal 2, zona 7, Guatemala</p>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <h2>🚑 Contactos de Emergencia</h2>
+
+      <div class="contact">
+        <img src="https://i.ibb.co/cXxS5vK3/papa.jpg" alt="Foto Francisco">
+        <div class="meta">
+          <p>👨 Papá: <strong>Francisco Choc</strong></p>
+          <p>📞 Tel: <strong>+502 4504-6999</strong></p>
+          <div class="buttons">
+            <a class="btn call" href="tel:+50245046999">📞 Llamar</a>
+            <a class="btn wa" href="https://wa.me/50245046999" target="_blank">💬 WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <img src="https://i.ibb.co/zVKyCXW0/mama.jpg" alt="Foto Angelica">
+        <div class="meta">
+          <p>👩 Mamá: <strong>Angelicaa Arrecis</strong></p>
+          <p>📞 Tel: <strong>+502 5769-6457</strong></p>
+          <div class="buttons">
+            <a class="btn call" href="tel:+50257696457">📞 Llamar</a>
+            <a class="btn wa" href="https://wa.me/50257696457" target="_blank">💬 WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
